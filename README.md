@@ -12,7 +12,9 @@ Essential development workflow skills for Claude Code - automate commits, code r
 
 ## 📦 Installation
 
-### Option 1: Install as Plugin (Recommended)
+### Option 1: Install via Marketplace (Recommended)
+
+Add the marketplace and install the plugin:
 
 ```bash
 /plugin marketplace add hansdesmedt/claude-developer-toolkit
@@ -20,6 +22,8 @@ Essential development workflow skills for Claude Code - automate commits, code r
 ```
 
 ### Option 2: Clone to Global Skills Directory
+
+Clone directly to your global skills folder:
 
 ```bash
 git clone https://github.com/hansdesmedt/claude-developer-toolkit.git ~/.claude/skills/developer-toolkit
@@ -34,7 +38,7 @@ git clone https://github.com/hansdesmedt/claude-developer-toolkit.git .claude/sk
 ### Option 3: Manual Installation
 
 1. Download this repository
-2. Copy the `skills` folder to one of these locations:
+2. Copy individual skill folders from `skills/` to:
    - Global: `~/.claude/skills/`
    - Project: `.claude/skills/`
 
