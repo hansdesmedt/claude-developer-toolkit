@@ -22,13 +22,13 @@ Essential development workflow skills for Claude Code - automate commits, code r
 ### Option 2: Clone to Global Skills Directory
 
 ```bash
-git clone https://github.com/hansdesmedt/claude-developer-toolkit.git ~/.claude/skills/claude-developer-toolkit
+git clone https://github.com/hansdesmedt/claude-developer-toolkit.git ~/.claude/skills/developer-toolkit
 ```
 
 Or clone to a project-specific directory:
 
 ```bash
-git clone https://github.com/hansdesmedt/claude-developer-toolkit.git .claude/skills/claude-developer-toolkit
+git clone https://github.com/hansdesmedt/claude-developer-toolkit.git .claude/skills/developer-toolkit
 ```
 
 ### Option 3: Manual Installation
