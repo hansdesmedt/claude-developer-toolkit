@@ -14,45 +14,16 @@
       "author": {
         "name": "Hans De Smedt"
       },
-      "source": ".",
+      "source": {
+        "source": "github",
+        "repo": "hansdesmedt/claude-developer-toolkit"
+      },
       "category": "productivity",
       "keywords": ["git", "commit", "review", "debug", "changelog", "development"],
       "homepage": "https://github.com/hansdesmedt/claude-developer-toolkit",
       "repository": "https://github.com/hansdesmedt/claude-developer-toolkit",
       "license": "MIT",
-      "strict": false,
-      "skills": [
-        {
-          "id": "commit",
-          "name": "Commit Changes",
-          "description": "Create git commits with conventional commit format",
-          "path": "skills/commit"
-        },
-        {
-          "id": "pr-review",
-          "name": "PR Review",
-          "description": "Perform thorough code reviews with constructive feedback",
-          "path": "skills/pr-review"
-        },
-        {
-          "id": "implement",
-          "name": "Implement Feature",
-          "description": "Implement features following best practices and guidelines",
-          "path": "skills/implement"
-        },
-        {
-          "id": "debug",
-          "name": "Debug Application",
-          "description": "Debug applications with strategic logging and monitoring",
-          "path": "skills/debug"
-        },
-        {
-          "id": "changelog",
-          "name": "Generate Changelog",
-          "description": "Generate changelog entries from git commits",
-          "path": "skills/changelog"
-        }
-      ]
+      "strict": false
     }
   ]
 }
