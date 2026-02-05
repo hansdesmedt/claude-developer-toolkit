@@ -1,0 +1,58 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-developer-toolkit",
+  "description": "Essential development workflow skills for Claude Code - automate commits, code reviews, debugging, feature implementation, and changelog generation",
+  "owner": {
+    "name": "Hans De Smedt",
+    "email": "hans.desmedt@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "developer-toolkit",
+      "description": "Complete toolkit with commit, pr-review, implement, debug, and changelog skills",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hans De Smedt"
+      },
+      "source": ".",
+      "category": "productivity",
+      "keywords": ["git", "commit", "review", "debug", "changelog", "development"],
+      "homepage": "https://github.com/hansdesmedt/claude-developer-toolkit",
+      "repository": "https://github.com/hansdesmedt/claude-developer-toolkit",
+      "license": "MIT",
+      "strict": false,
+      "skills": [
+        {
+          "id": "commit",
+          "name": "Commit Changes",
+          "description": "Create git commits with conventional commit format",
+          "path": "skills/commit"
+        },
+        {
+          "id": "pr-review",
+          "name": "PR Review",
+          "description": "Perform thorough code reviews with constructive feedback",
+          "path": "skills/pr-review"
+        },
+        {
+          "id": "implement",
+          "name": "Implement Feature",
+          "description": "Implement features following best practices and guidelines",
+          "path": "skills/implement"
+        },
+        {
+          "id": "debug",
+          "name": "Debug Application",
+          "description": "Debug applications with strategic logging and monitoring",
+          "path": "skills/debug"
+        },
+        {
+          "id": "changelog",
+          "name": "Generate Changelog",
+          "description": "Generate changelog entries from git commits",
+          "path": "skills/changelog"
+        }
+      ]
+    }
+  ]
+}
