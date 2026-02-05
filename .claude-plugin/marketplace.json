@@ -1,29 +1,36 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "claude-developer-toolkit",
+  "version": "1.0.0",
   "description": "Essential development workflow skills for Claude Code - automate commits, code reviews, debugging, feature implementation, and changelog generation",
   "owner": {
     "name": "Hans De Smedt",
     "email": "hans.desmedt@gmail.com"
   },
+  "homepage": "https://github.com/hansdesmedt/claude-developer-toolkit",
+  "repository": "https://github.com/hansdesmedt/claude-developer-toolkit",
+  "license": "MIT",
   "plugins": [
     {
       "name": "developer-toolkit",
-      "description": "Complete toolkit with commit, pr-review, implement, debug, and changelog skills",
       "version": "1.0.0",
+      "description": "Collection of development workflow skills including commit, pr-review, implement, debug, and changelog",
       "author": {
         "name": "Hans De Smedt"
       },
-      "source": {
-        "source": "github",
-        "repo": "hansdesmedt/claude-developer-toolkit"
-      },
-      "category": "productivity",
-      "keywords": ["git", "commit", "review", "debug", "changelog", "development"],
+      "keywords": ["git", "commit", "review", "debug", "changelog", "development", "workflow", "productivity"],
       "homepage": "https://github.com/hansdesmedt/claude-developer-toolkit",
       "repository": "https://github.com/hansdesmedt/claude-developer-toolkit",
       "license": "MIT",
-      "strict": false
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/commit",
+        "./skills/pr-review",
+        "./skills/implement",
+        "./skills/debug",
+        "./skills/changelog"
+      ]
     }
   ]
 }
