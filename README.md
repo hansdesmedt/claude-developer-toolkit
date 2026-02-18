@@ -9,6 +9,7 @@ Essential development workflow skills for Claude Code - automate commits, code r
 - **`/implement`** - Feature implementation following best practices
 - **`/debug`** - Interactive debugging with auto-start and log monitoring
 - **`/changelog`** - Generate changelog entries from git history
+- **`/worktree-debug`** - Debug a specific commit in an isolated git worktree
 
 ## 📦 Installation
 
@@ -115,6 +116,23 @@ The skill will:
 4. Identify and analyze issues
 5. Suggest fixes
 
+### Worktree Debug
+
+Debug a specific commit in an isolated git worktree:
+
+```
+/worktree-debug abc1234
+```
+
+The skill will:
+1. Create an isolated worktree at the specified commit
+2. Auto-detect and start the project (npm, make, pip, cargo, static)
+3. Optionally inject debug logging into the target code
+4. Open Chrome DevTools for browser-based debugging
+5. Clean up the worktree and processes on exit
+
+Use this instead of `/debug` when you need to test older code, bisect a bug, or compare behaviour between commits.
+
 ### Changelog
 
 Generates formatted changelogs from git history:
@@ -151,7 +169,9 @@ skills/
 │   └── SKILL.md
 ├── pr-review/
 │   └── SKILL.md
-└── changelog/
+├── changelog/
+│   └── SKILL.md
+└── worktree-debug/
     └── SKILL.md
 ```
 
